@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat, Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.main {
+    background-image: url(main-section-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-overlay {
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100vw;
+    z-index: 0;
+    background: linear-gradient(#000000, #00000000);
+}
+
+nav {
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 140px;
+}
+
+nav h2 {
+    font-size: 36px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.mobile-nav-name {
+    display: none;
+}
+
+.hamburger-menu-icon {
+    position: absolute;
+    top: 44px;
+    right: 50px;
+    display: none;
+}
+
+.hamburger-menu-icon .bar {
+    height: 2px;
+    width: 16px;
+    background-color: white;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+
+.first-section-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-section {
+    margin-top: 100px;
+}
+
+.contact-section svg {
+    fill: white;
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+}
+
+.hero-section {
+    margin-left: 140px;
+    max-width: 580px;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.hero-section button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #ff760dd9;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.shadow-container {
+    overflow: hidden;
+    position: relative;
+    filter: drop-shadow(-10px 20px 20px rgba(0, 0, 0, 0.5));
+}
+
+.image-container img {
+    height: 600px;
+    width: 700px;
+    clip-path: polygon(0 0, 100% 0, 100% 27%, 100% 100%, 30% 100%, 0 60%);
+}
+
+/* about me section */
+
+.about-me {
+    background-color: #05060a;
+    background-size: cover;
+    display: flex;
+    padding: 100px 140px;
+}
+
+.about-me p {
+    line-height: 1.5em;
+}
+
+.about-me h2 {
+    font-size: 48px;
+}
+
+.left-side, .right-side {
+  flex-basis: 50%;
+}
+
+.about-me img {
+    width: 530px;
+}
+
+.work-philosophy, .my-learning-progress, .my-hobbies {
+    margin-top: 100px;
+    max-width: 650px;
+}
+
+.about-me p {
+    font-style: italic;
+    line-height: auto;
+}
+
+.about-me-text {
+    max-width: 650px;
+}
+
+.work-philosophy h2 {
+    margin-bottom: 20px;
+}
+
+.left-side h2 {
+    font-size: 48px;
+}
+
+.my-learning-progress {
+    line-height: 1.5em;
+}
+
+.my-learning-progress .date {
+    color: #FF993C;
+    margin-top: 35px;
+}
+
+.my-learning-progress .school {
+    font-weight: 600;
+}
+
+.skills {
+    width: 650px;
+    margin-top: 100px;
+    padding: 50px;
+    box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #FF993C,
+            0 0 0.8rem #FF993C,
+            0 0 2.8rem #FF993C,
+            inset 0 0 1.3rem #FF993C; 
+    border-radius: 5px;
+}
+
+.skills h2 {
+    margin-bottom: 25px;
+}
+
+.skills-container {
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    width: 50px;
+    margin: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 25px;
+}
+
+.skill p {
+    font-weight: 600;
+}
+
+.second-photo {
+    margin-top: 100px;
+}
+
+.my-hobbies h2 {
+    margin-bottom: 35px;
+}
+
+.my-hobbies h3 {
+    margin: 10px 0;
+}
+
+#portfolio-navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #333;
+    color: black;
+    padding: 10px;
+    transform: translateY(-90%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+}
+
+#portfolio-navbar p {
+    margin: 10px 0;
+}
+  
+.portfolio {
+    height: 150vh;
+}
+
+
+
+
+
+
+  
+
+
+#glow {
+    position: fixed;
+    pointer-events: none;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 50px 150px rgba(255, 255, 255, 0.05);
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1650px) {
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me .about-me-text {
+        margin-top: 100px;
+    }
+
+    .about-me .my-picture {
+        width: 650px;
+    }
+
+}
+
+@media only screen and (max-width: 1400px) {
+    nav {
+        margin: 0 50px;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    nav h2 {
+        font-size: 16px;
+        min-width: 200px;
+        text-align: center;
+    }
+
+    .hero-section {
+        margin: 0 50px;
+    }
+    
+    .contact-section {
+        margin: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .image-container img {
+        width: 500px;
+        height: 300px;
+        background-size: contain;
+    }
+
+    .contact-section svg {
+        fill: white;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .contact-section {
+        margin-top: 50px;
+    }
+
+    .hero-section h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .hero-section p {
+        font-size: 14px;
+        margin-bottom: 15px;
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #home {
+        height: 70vh;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .mobile-nav-name {
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 50px;
+    }
+    
+    body {
+        margin-top: -100px;
+    }
+
+    .nav-overlay {
+        display: none;
+    }
+
+    .hamburger-menu-icon {
+        display: block;
+    }
+
+    .shadow-container {
+        display: none;
+    }
+
+    .hero-section {
+        margin: 150px 50px 100px;
+    }
+
+    .contact-section {
+        margin-top: 30px;
+    }
+
+    .about-me .my-picture {
+        width: 80vw;
+    }
+
+    .my-learning-progress h2 {
+        line-height: 1em;
+    }
+
+    .skills h2 {
+        text-align: center;
+    }
+
+    .skills {
+        width: 80vw;
+        margin: 100px auto 0 auto;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
