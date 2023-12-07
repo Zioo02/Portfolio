@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
   
       sections.forEach(section => {
         const sectionTop = section.getBoundingClientRect().top;
-        if (sectionTop <= window.innerHeight / 2) { // Ajust this value as needed
+        if (sectionTop <= window.innerHeight / 2) {
           currentSection = section.getAttribute('id');
         }
       });
@@ -45,4 +45,18 @@ document.addEventListener('DOMContentLoaded', (e) => {
     window.addEventListener('scroll', onScroll);
   });
   
+  document.getElementById('scroll-button').addEventListener('click', function() {
+    document.getElementById('scroll-to-portfolio').scrollIntoView({ behavior: 'smooth' });
+  });
   
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.querySelector('.hamburger-menu-icon');
+    const mobileNav = document.querySelector('.mobile-nav-open');
+  
+    menuIcon.addEventListener('click', function() {
+      mobileNav.classList.toggle('mobile-active');
+    });
+    document.getElementById('close-button').addEventListener('click', function() {
+      mobileNav.classList.remove('mobile-active');
+    })
+  });
